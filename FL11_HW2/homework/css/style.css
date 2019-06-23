@@ -39,11 +39,12 @@
     li:nth-child(even) {
         text-align: right;
     }
-    .carousel ,.padding-medium,.tm-main-content, ol{
-        padding: 0;
-    }
+   
     .tm-content-box {
         margin: 0;
+    }
+    .carousel ,.padding-medium,.tm-main-content, ol{
+        padding: 0;
     }
 
     .tm-team-description-container, h2 {
@@ -76,10 +77,9 @@
     	}
 	}
 	.tm-main-content section::before{
-		
 		content: '';
-		width: 0;
-		height: 0;	
+	    height: 0;	
+        width: 0;
 		border-top: 30px solid #5ce;
 		border-right: 50px solid transparent;
 	}
