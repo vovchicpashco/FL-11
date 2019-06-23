@@ -85,7 +85,6 @@
 	}
 	h2.tm-box-bg-title:hover{
 		background-color: #31b0d5;
-		color:white;
 		font-weight: bold;
 	}
 	section:first-of-type > div:first-child > div:first-child{
@@ -100,7 +99,7 @@
     	height: auto;
 	    padding: 10px;
 	}
-	ul.boxes li.box p::first-letter{
+	ul.boxes li.box p::first-letter, .padding-medium ol a{
 		color: black;
 	}
 	section:first-of-type,.heading,#ideas,#home,.tm-sidebar,.blocks,.tm-main-content section:nth-child(6){
@@ -131,9 +130,6 @@
 		box-shadow: -3px 0px 0px 0px #ffb347;
 		text-decoration-line: none;
 	}
-	.padding-medium ol a {
-		color: black;
-	}
 	.mandatory-field::after{
 		content: "";
 		background: url(../img/email-icon.png) no-repeat;
@@ -142,15 +138,19 @@
 		top: 4px;
 		width: 30px;
 		height: 30px;
-	}
+    }
+    .form-control, input[type=text]:focus,input[type=email]:focus,textarea:focus {
+        border-bottom: 5px solid  #87cefa;
+    }
 	.form-control{
-		border-bottom: 5px solid  #87cefa;
 		border-top:0px;
 		border-left: 0px;
 		border-right: 0px;
-	}
+    }
+    .btn:hover, input[type=text]:focus,input[type=email]:focus,textarea:focus, h2.tm-box-bg-title:hover {
+        color: white;
+    }
 	.btn:hover{
-		color: white;
 		background-color: #87cefa;
 		border: 1px solid #87c;
 	}
@@ -159,8 +159,6 @@
 	}
 	input[type=text]:focus,input[type=email]:focus,textarea:focus{
 		background: #87cefa;
-		border-bottom: 5px solid  #87cefa;
-		color:white;
 	}
 	.btn{
 		background: 0;
