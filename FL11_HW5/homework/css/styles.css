@@ -9,15 +9,15 @@ body {
     color: #fff;
   }
   
-  .header_nav, .header_wrap,  .header_logo, .menu_list,  .menu_list_item {
+  .header_nav, .header_wrapper,  .header_logo, .menu_list,  .menu_list_item {
     height: 100%;
   }
 
-  .header_wrap, .header_logo,    .footer_wrap,  .menu_list_link, .main, .main .articles .post, .aside .news, .footer_wrap, .header_wrap,  .main .articles .post_content, .main .articles .post_content {
+  .header_wrapper, .header_logo,    .footer_wrap,  .menu_list_link, .main, .main .articles .post, .aside .news, .footer_wrapper, .header_wrapper,  .main .articles .post_content, .main .articles .post_content {
     display: flex;
    }
   
-  .header_wrap {
+  .header_wrapper {
     width: 1385px;
     margin: 0 auto;
     background: #162b4d;
@@ -205,7 +205,7 @@ body {
     line-height: 1;
   }
   
-  .footer_wrap {
+  .footer_wrapper {
     justify-content: space-between;
     align-items: center;
   }
@@ -260,7 +260,7 @@ body {
       width: 100%;
     }
   
-    .header_wrap {
+    .header_wrapper {
       width: 100%;
       justify-content: center;
       align-items: center;
@@ -338,7 +338,7 @@ body {
       width: 37%;
     }
   
-    .footer_wrap {
+    .footer_wrapper {
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
@@ -371,16 +371,15 @@ body {
       width: auto;
     }
   
-    .main .aside .news {
-      align-items: flex-start;
-    }
-  
-    .main .aside .news_title {
+     .main .aside .news_title {
       font-size: 40px;
       width: auto;
       padding: 0 25px;
     }
-  
+
+   .main .aside .news {
+      align-items: flex-start;
+    }
     .main .aside .news_text {
       width: auto;
       padding: 0 25px 25px;
