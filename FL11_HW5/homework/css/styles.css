@@ -5,14 +5,15 @@ body {
     padding: 0 10px;
   }
   
-  .header {
-    color: #fff;
-  }
   
   .header_nav, .header_wrapper,  .header_logo, .menu_list,  .menu_list_item {
     height: 100%;
   }
 
+.header {
+    color: #fff;
+  }
+  
   .header_wrapper, .header_logo,    .footer_wrap,  .menu_list_link, .main, .main .articles .post, .aside .news, .footer_wrapper, .header_wrapper,  .main .articles .post_content, .main .articles .post_content {
     display: flex;
    }
@@ -210,13 +211,13 @@ body {
     align-items: center;
   }
   
-  .footer_copyright {
-    margin: 20px;
-  }
-  
-  .footer_design {
+   .footer_design {
     margin-right: 20px;
     line-height: 1.5;
+  }
+  
+  .footer_copyright {
+    margin: 20px;
   }
   
   @media (max-width: 1399px) {
