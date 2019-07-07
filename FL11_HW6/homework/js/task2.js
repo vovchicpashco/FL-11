@@ -15,4 +15,6 @@ if (firstCatheti + secondCatheti > hypotenuse &&
     } else {
         console.log('Triangle doesn’t exist');
     }
+} else {
+    console.log('Triangle doesn’t exist');
 }
