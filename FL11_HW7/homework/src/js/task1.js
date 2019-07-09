@@ -29,11 +29,11 @@ if (!password) {
 	alert('Wrong password');
 }
 
-let passwordChange = confirm('Do you want to change your password?');
+let changePassword = confirm('Do you want to change your password?');
 let newPass = '';
 let oldPass = '';
 
-if (passwordChange) {
+if (changePassword) {
 	oldPass = prompt('Please write your password');
 	if (emailAddress === emailUser && password === passUser || emailAddress === emailAdmin && password === adminPass) {
 		newPass = prompt('Please write your new password')

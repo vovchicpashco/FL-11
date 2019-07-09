@@ -9,8 +9,9 @@ const maxAttempt = 3;
 const rangeStep = 4;
 const defaultvalueRange = 8;
 const defaultPrize = 100;
-const maxPrizeMultiplyer = 2;
+const maxPrizeMultiplayer = 2;
 const dividerPrize = 2;
+
 for (; ;) {
     maxvalueRange = defaultvalueRange;
     prizeUser = 0;
@@ -46,7 +47,7 @@ for (; ;) {
                 }
 
             }
-            maxPrize *= maxPrizeMultiplyer;
+            maxPrize *= maxPrizeMultiplayer;
             maxvalueRange += rangeStep;
         } while (prize > 0);
         alert('Thank you for your participation. Your prize is: ' + prizeUser + '$');
