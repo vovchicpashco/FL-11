@@ -30,24 +30,25 @@ if (!password) {
 }
 
 let changePassword = confirm('Do you want to change your password?');
-let newPass = '';
-let oldPass = '';
+let passNew = '';
+let passOld = '';
+
 
 if (changePassword) {
-	oldPass = prompt('Please write your password');
+	passOld = prompt('Please write your password');
 	if (emailAddress === emailUser && password === passUser || emailAddress === emailAdmin && password === adminPass) {
-		newPass = prompt('Please write your new password')
+		passNew = prompt('Please write your new password')
 	} else {
 		alert('You have failed the change.');
 	}
 }
 
 let passRepeat = '';
-if (newPass.length < passLength) {
+if (passNew.length < passLength) {
 	alert('It’s too short password. Sorry.')
 } else {
 	passRepeat = prompt('Enter again your password');
-	if (passRepeat === newPass) {
+	if (passRepeat === passNew) {
 		alert('You have successfully changed your password.');
 	} else {
 		alert('You wrote the wrong password.');
