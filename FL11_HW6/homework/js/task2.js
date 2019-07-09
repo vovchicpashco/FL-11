@@ -4,7 +4,6 @@ let hypotenuse = +prompt("Please, enter hypotenuse", "");
 
 if (firstCatheti + secondCatheti > hypotenuse &&
     firstCatheti + hypotenuse > secondCatheti && secondCatheti + hypotenuse > firstCatheti) {
-    console.log('Triangle can exist');
 
     if (firstCatheti === secondCatheti && secondCatheti === hypotenuse && hypotenuse === firstCatheti) {
         console.log('Eequivalent triangle');
